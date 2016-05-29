@@ -1,0 +1,1 @@
+[["\uace0\uae08\uc18c\ucd1d 2 (Unchanging Weapon 2)", "19587"], ["\uc0b0\ub538\uae30 4", "19600"], ["\uc544\ub9c8\uc870\ub2c8\uc544 (Forest Slave)", "35899"], ["\uc560\ub9c8\ubd80\uc778 5 (Madame Emma 5)", "10713"], ["\uce7c\ub9ac\uad74\ub77c (Caligula)", "10857"], ["\ud301\uc8fc\ub294 \uc5ec\uc790", "23410"]]
