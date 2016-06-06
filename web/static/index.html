@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<title>Deus ab Movies</title>
+<style type="text/css">
+.damn {
+    border: blue 1px solid;
+    border-radius: 5px;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+    margin: 20px;
+    box-shadow: 0 0 5px 5px gray;
+}
+.damn input[type="text"] {
+    width: 300px;
+}
+.damn textarea {
+    width: 300px;
+}
+.config-item {
+    display: hidden;
+}
+</style>
+<script type="text/javascript" src="/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+<h1>Deus ab Movies</h1>
+<p>A `well learned` movie precasting system</p>
+<form class="damn">
+<h2>Input</h2>
+<h3>Nation</h3>
+<hr />
+<div class="config">
+<div class="config-item"><input type="text" /><input class="config-add" type="button" value="+" /><br /></div>
+</div>
+<h3>Director</h3>
+<hr />
+<div class="config">
+<div class="config-item"><input type="text" /><input class="config-add" type="button" value="+" /><br /></div>
+</div>
+<h3>Actor</h3>
+<hr />
+<div class="config">
+<div class="config-item"><input type="text" /><input class="config-add" type="button" value="+" /><br /></div>
+</div>
+<h3>Genre</h3>
+<hr />
+<div class="config">
+<div class="config-item"><input type="text" /><input class="config-add" type="button" value="+" /><br /></div>
+</div>
+<input style="margin: 30px 0 0;" type="submit" />
+</form>
+<div class="damn" id="result">
+<h2>Result</h2>
+<textarea></textarea>
+</div>
+</body>
+<script type="text/javascript">
+$("document").ready(function() {
+  var e = $(".config")
+  for (var i = 0; i < e.length; i++) {
+    m = $(e[i]).find(".config-item");
+    v = m.find(".config-add");
+    v.click(
+      (function(eix, mix) {
+        return (function() {
+	  mixx = mix.clone();
+	  mixx.find(".config-add").val("-");
+          eix.append(mixx);
+          return true;
+        });
+      })($(e[i]), m)
+    );
+  }
+});
+</script>
+</html>
